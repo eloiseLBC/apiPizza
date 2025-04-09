@@ -21,7 +21,7 @@ L’objectif est de fournir une API RESTful permettant d’interagir avec les do
 
 ## 🚀 Lancer le projet localement
 ### Cloner le repo
-<pre> git clone https://github.com/<ton_user>/pizza-cap-api.git
+<pre>git clone https://github.com/<ton_user>/pizza-cap-api.git
 cd pizza-cap-api
 </pre>
   
