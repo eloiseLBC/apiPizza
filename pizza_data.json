@@ -1,0 +1,166 @@
+[
+    {
+        "id" : 1,
+        "name" : "Margherita",
+        "description" : "Tomato sauce, mozzarella, and fresh basil.",
+        "ingredients" : [
+            "Tomato sauce",
+            "Mozzarella",
+            "Fresh basil"
+        ],
+        "price" : 8.50,
+        "features" : [
+            "Vegetarian",
+            "Gluten-free option"
+        ],
+        "image" : "margherita.jpeg"
+    },
+    {
+        "id" : 2,
+        "name" : "Pepperoni",
+        "description" : "Tomato sauce, mozzarella, and pepperoni.",
+        "ingredients" : [
+            "Tomato sauce",
+            "Mozzarella",
+            "Pepperoni"
+        ],
+        "price" : 9.00,
+        "features" : [
+            "Spicy"
+        ],
+        "image" : "pepperoni.jpeg"
+    },
+    {
+        "id" : 3,
+        "name" : "Ortolana",
+        "description" : "Tomato sauce, mozzarella, bell peppers, onions, and mushrooms.",
+        "ingredients" : [
+            "Tomato sauce",
+            "Mozzarella",
+            "Bell peppers",
+            "Onions",
+            "Mushrooms"
+        ],
+        "price" : 8.50,
+        "features" : [
+            "Vegetarian"
+        ],
+        "image" : "ortolana.jpeg",
+        "tag": "moment"
+    },
+    {
+        "id" : 4,
+        "name" : "Quattro Stagioni",
+        "description" : "Tomato sauce, mozzarella, mushrooms, ham, artichokes, and olives.",
+        "ingredients" : [
+            "Tomato sauce",
+            "Mozzarella",
+            "Mushrooms",
+            "Ham",
+            "Artichokes",
+            "Olives"
+        ],
+        "price" : 10.00,
+        "features" : [
+            "Gluten-free option"
+        ],
+        "image" : "4_saisons.jpeg",
+        "tag": "moment"
+    },
+    {
+        "id" : 5,
+        "name" : "Reine",
+        "description" : "Tomato sauce, mozzarella, spicy salami, and chili peppers.",
+        "ingredients" : [
+            "Tomato sauce",
+            "Mozzarella",
+            "Spicy salami",
+            "Chili peppers"
+        ],
+        "price" : 9.50,
+        "features" : [
+            "Spicy"
+        ],
+        "image" : "reine.jpeg",
+        "tag": "moment"
+    },
+    {
+        "id" : 6,
+        "name" : "Calzone",
+        "description" : "Folded pizza with tomato sauce, mozzarella, ham, and mushrooms.",
+        "ingredients" : [
+            "Tomato sauce",
+            "Mozzarella",
+            "Ham",
+            "Mushrooms"
+        ],
+        "price" : 10.50,
+        "features" : [
+            "Vegetarian"
+        ],
+        "image" : "calzone.jpeg",
+        "tag": "popular"
+    },
+    {
+        "id" : 7,
+        "name" : "Cannibale",
+        "description" : "Barbecue sauce, mozzarella, roast chicken, merguez, minced beef with a flaming flavor.",
+        "ingredients" : [
+            "Barbecue sauce",
+            "Mozzarella",
+            "Roast Chicken",
+            "Merguez",
+            "Minced beef"
+        ],
+        "price" : 10.00,
+        "image" : "cannibale.jpeg"
+    },
+    {
+        "id" : 8,
+        "name" : "Napolitana",
+        "description" : "Tomato sauce, mozzarella, ham, and mushrooms.",
+        "ingredients" : [
+            "Tomato sauce",
+            "Mozzarella",
+            "Ham",
+            "Mushrooms"
+        ],
+        "price" : 8.50,
+        "image" : "napolitaine.jpeg"
+    },
+    {
+        "id": 9,
+        "name": "Quattro Fromaggio",
+        "description": "Cream sauce, mozzarella, gorgonzola, goat cheese, and parmesan.",
+        "ingredients": [
+            "Cream sauce",
+            "Mozzarella",
+            "Gorgonzola",
+            "Goat cheese",
+            "Parmesan"
+        ],
+        "price": 11.00,
+        "features": [
+            "Vegetarian"
+        ],
+        "image": "4_fromages.jpeg",
+        "tag": "popular"
+    },
+    {
+        "id": 10,
+        "name": "Norvegienne",
+        "description": "Cream sauce, mozzarella, smoked salmon, and dill.",
+        "ingredients": [
+            "Cream sauce",
+            "Mozzarella",
+            "Smoked salmon",
+            "Dill"
+        ],
+        "price": 12.50,
+        "features": [
+            "Seafood"
+        ],
+        "image": "norvegienne.jpeg",
+        "tag": "popular"
+    }
+]

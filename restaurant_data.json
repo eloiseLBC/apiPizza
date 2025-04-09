@@ -1,0 +1,47 @@
+[
+    {
+       "id": 1,
+       "name": "Rangueil",
+       "address": "271 Rte de Narbonne, 31400 Toulouse",
+       "opening_hours": {
+          "Monday": "10:00-22:00",
+          "Tuesday": "10:00-22:00",
+          "Wednesday": "10:00-22:00",
+          "Thursday": "10:00-22:00",
+          "Friday": "10:00-23:00",
+          "Saturday": "10:00-23:00",
+          "Sunday": "Closed"
+       },
+       "phone_number":"05 61 73 18 18"
+    },
+    {
+       "id": 2,
+       "name": "Héraclès",
+       "address": "3 avenue Paul Sejourne, 31000, Toulouse France",
+        "opening_hours": {
+             "Monday": "11:00-14:00",
+             "Tuesday": "11:00-22:00",
+             "Wednesday": "Closed",
+             "Thursday": "11:00-22:00",
+             "Friday": "11:00-23:00",
+             "Saturday": "11:00-23:00",
+             "Sunday": "Closed"
+        },
+        "phone_number":"05 61 21 24 24"
+    },
+    {
+        "id": 3,
+        "name": "Carmes",
+        "address": "2 Rue des Puits Creusés, 31000 Toulouse",
+        "opening_hours": {
+            "Monday": "Closed",
+            "Tuesday": "Closed",
+            "Wednesday": "Closed",
+            "Thursday": "Closed",
+            "Friday": "Closed",
+            "Saturday": "Closed",
+            "Sunday": "Closed"
+        },
+        "phone_number":"05 61 21 24 26"
+    }
+ ]
