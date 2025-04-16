@@ -7,6 +7,7 @@ click==8.1.8
 distlib==0.3.9
 filelock==3.17.0
 Flask==3.1.0
+flask-cors==5.0.1
 flask-marshmallow==1.3.0
 Flask-Migrate==4.1.0
 Flask-RESTful==0.3.10
@@ -19,6 +20,7 @@ kagglehub==0.3.11
 Mako==1.3.9
 MarkupSafe==3.0.2
 marshmallow==3.26.1
+marshmallow-sqlalchemy==1.4.1
 numpy==2.2.2
 packaging==24.2
 pandas==2.2.3

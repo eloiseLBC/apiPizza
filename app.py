@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_cors import CORS
 from flask_migrate import Migrate
 from flask_marshmallow import Marshmallow
 from models import db, Pizza, Restaurant
@@ -6,6 +7,7 @@ from routes import register_routes
 import json, os
 
 app = Flask(__name__)
+CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///pizzadatabase.db'
 
 db.init_app(app)
