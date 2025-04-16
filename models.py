@@ -23,7 +23,7 @@ class Pizza(db.Model):
             "ingredients": self.ingredients,
             "price": self.price,
             "features": self.features,
-            "image_url": f"http://localhost:5000/images/{self.image}" if self.image else None,
+            "image_url": f"http://localhost:5050/static/images/{self.image}" if self.image else None,
             "tag": self.tag
         }
 

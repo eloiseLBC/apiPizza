@@ -1,5 +1,6 @@
 from flask import jsonify, send_from_directory
 from models import Pizza, Restaurant
+import os
 
 def register_routes(app):
 
@@ -18,6 +19,6 @@ def register_routes(app):
         pizza = Pizza.query.get_or_404(pizza_id)
         return jsonify(pizza.serialize()), 200
 
-    @app.route('/images/<filename>', methods=['GET'])
-    def serve_image(filename):
-        return send_from_directory('images', filename, mimetype='image/jpeg')
+    # @app.route('/images/<path:filename>', methods=['GET'])
+    # def serve_image(filename):
+    #     return send_from_directory(os.path.join(app.root_path, 'images'), filename, mimetype='image/jpeg')

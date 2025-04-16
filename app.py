@@ -6,7 +6,7 @@ from models import db, Pizza, Restaurant
 from routes import register_routes
 import json, os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///pizzadatabase.db'
 
@@ -52,4 +52,4 @@ def load_data_from_json():
 load_data_from_json()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5050)
