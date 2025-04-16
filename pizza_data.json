@@ -1,58 +1,61 @@
 [
     {
-        "id" : 1,
-        "name" : "Margherita",
-        "description" : "Tomato sauce, mozzarella, and fresh basil.",
-        "ingredients" : [
+        "id": 1,
+        "name": "Margherita",
+        "description": "Tomato sauce, mozzarella, and fresh basil.",
+        "ingredients": [
             "Tomato sauce",
             "Mozzarella",
             "Fresh basil"
         ],
-        "price" : 8.50,
-        "features" : [
+        "price": 8.50,
+        "features": [
             "Vegetarian",
             "Gluten-free option"
         ],
-        "image" : "margherita.jpeg"
+        "image": "margherita.jpeg",
+        "categorie": "Classiques"
     },
     {
-        "id" : 2,
-        "name" : "Pepperoni",
-        "description" : "Tomato sauce, mozzarella, and pepperoni.",
-        "ingredients" : [
+        "id": 2,
+        "name": "Pepperoni",
+        "description": "Tomato sauce, mozzarella, and pepperoni.",
+        "ingredients": [
             "Tomato sauce",
             "Mozzarella",
             "Pepperoni"
         ],
-        "price" : 9.00,
-        "features" : [
+        "price": 9.00,
+        "features": [
             "Spicy"
         ],
-        "image" : "pepperoni.jpeg"
+        "image": "pepperoni.jpeg",
+        "categorie": "Spéciales"
     },
     {
-        "id" : 3,
-        "name" : "Ortolana",
-        "description" : "Tomato sauce, mozzarella, bell peppers, onions, and mushrooms.",
-        "ingredients" : [
+        "id": 3,
+        "name": "Ortolana",
+        "description": "Tomato sauce, mozzarella, bell peppers, onions, and mushrooms.",
+        "ingredients": [
             "Tomato sauce",
             "Mozzarella",
             "Bell peppers",
             "Onions",
             "Mushrooms"
         ],
-        "price" : 8.50,
-        "features" : [
+        "price": 8.50,
+        "features": [
             "Vegetarian"
         ],
-        "image" : "ortolana.jpeg",
-        "tag": "moment"
+        "image": "ortolana.jpeg",
+        "tag": "moment",
+        "categorie": "Spéciales"
     },
     {
-        "id" : 4,
-        "name" : "Quattro Stagioni",
-        "description" : "Tomato sauce, mozzarella, mushrooms, ham, artichokes, and olives.",
-        "ingredients" : [
+        "id": 4,
+        "name": "Quattro Stagioni",
+        "description": "Tomato sauce, mozzarella, mushrooms, ham, artichokes, and olives.",
+        "ingredients": [
             "Tomato sauce",
             "Mozzarella",
             "Mushrooms",
@@ -60,73 +63,78 @@
             "Artichokes",
             "Olives"
         ],
-        "price" : 10.00,
-        "features" : [
+        "price": 10.00,
+        "features": [
             "Gluten-free option"
         ],
-        "image" : "4_saisons.jpeg",
-        "tag": "moment"
+        "image": "4_saisons.jpeg",
+        "tag": "moment",
+        "categorie": "Classiques"
     },
     {
-        "id" : 5,
-        "name" : "Reine",
-        "description" : "Tomato sauce, mozzarella, spicy salami, and chili peppers.",
-        "ingredients" : [
+        "id": 5,
+        "name": "Reine",
+        "description": "Tomato sauce, mozzarella, spicy salami, and chili peppers.",
+        "ingredients": [
             "Tomato sauce",
             "Mozzarella",
             "Spicy salami",
             "Chili peppers"
         ],
-        "price" : 9.50,
-        "features" : [
+        "price": 9.50,
+        "features": [
             "Spicy"
         ],
-        "image" : "reine.jpeg",
-        "tag": "moment"
+        "image": "reine.jpeg",
+        "tag": "moment",
+        "categorie": "Classiques"
     },
     {
-        "id" : 6,
-        "name" : "Calzone",
-        "description" : "Folded pizza with tomato sauce, mozzarella, ham, and mushrooms.",
-        "ingredients" : [
+        "id": 6,
+        "name": "Calzone",
+        "description": "Folded pizza with tomato sauce, mozzarella, ham, and mushrooms.",
+        "ingredients": [
             "Tomato sauce",
             "Mozzarella",
             "Ham",
             "Mushrooms"
         ],
-        "price" : 10.50,
-        "features" : [
+        "price": 10.50,
+        "features": [
             "Vegetarian"
         ],
-        "image" : "calzone.jpeg",
-        "tag": "popular"
+        "image": "calzone.jpeg",
+        "tag": "popular",
+        "categorie": "Spéciales"
     },
     {
-        "id" : 7,
-        "name" : "Cannibale",
-        "description" : "Barbecue sauce, mozzarella, roast chicken, merguez, minced beef with a flaming flavor.",
-        "ingredients" : [
+        "id": 7,
+        "name": "Cannibale",
+        "description": "Barbecue sauce, mozzarella, roast chicken, merguez, minced beef with a flaming flavor.",
+        "ingredients": [
             "Barbecue sauce",
             "Mozzarella",
             "Roast Chicken",
             "Merguez",
             "Minced beef"
         ],
-        "price" : 10.00,
-        "image" : "cannibale.jpeg"
+        "price": 10.00,
+        "image": "cannibale.jpeg",
+        "categorie": "Spéciales"
     },
     {
-        "id" : 8,
-        "name" : "Napolitana",
-        "description" : "Tomato sauce, mozzarella, ham, and mushrooms.",
-        "ingredients" : [
+        "id": 8,
+        "name": "Napolitana",
+        "description": "Tomato sauce, mozzarella, ham, and mushrooms.",
+        "ingredients": [
             "Tomato sauce",
             "Mozzarella",
             "Ham",
             "Mushrooms"
         ],
-        "price" : 8.50,
-        "image" : "napolitaine.jpeg"
+        "price": 8.50,
+        "image": "napolitaine.jpeg",
+        "categorie": "Classiques"
     },
     {
         "id": 9,
@@ -144,7 +152,8 @@
             "Vegetarian"
         ],
         "image": "4_fromages.jpeg",
-        "tag": "popular"
+        "tag": "popular",
+        "categorie": "Classiques"
     },
     {
         "id": 10,
@@ -161,6 +170,293 @@
             "Seafood"
         ],
         "image": "norvegienne.jpeg",
-        "tag": "popular"
+        "tag": "popular",
+        "categorie": "Gourmandes"
+    },
+    {
+        "id": 11,
+        "name": "Vesuvio",
+        "description": "Tomato sauce, mozzarella, ham, and spicy salami.",
+        "ingredients": [
+            "Tomato sauce",
+            "Mozzarella",
+            "Ham",
+            "Spicy salami"
+        ],
+        "price": 9.50,
+        "features": [
+            "Spicy"
+        ],
+        "image": "vesuvio.jpeg",
+        "categorie": "Classiques"
+    },
+    {
+        "id": 12,
+        "name": "Truffata",
+        "description": "Cream sauce, mozzarella, mushrooms, and truffle oil.",
+        "ingredients": [
+            "Cream sauce",
+            "Mozzarella",
+            "Mushrooms",
+            "Truffle oil"
+        ],
+        "price": 13.00,
+        "features": [
+            "Vegetarian"
+        ],
+        "image": "truffata.jpeg",
+        "categorie": "Gourmandes"
+    },
+    {
+        "id": 13,
+        "name": "Montagnarde",
+        "description": "Tomato sauce, mozzarella, potatoes, bacon, and reblochon.",
+        "ingredients": [
+            "Tomato sauce",
+            "Mozzarella",
+            "Potatoes",
+            "Bacon",
+            "Reblochon"
+        ],
+        "price": 12.50,
+        "image": "montagnarde.jpeg",
+        "categorie": "Gourmandes"
+    },
+    {
+        "id": 14,
+        "name": "Saumon & Fromage",
+        "description": "Cream sauce, mozzarella, smoked salmon, goat cheese, and dill.",
+        "ingredients": [
+            "Cream sauce",
+            "Mozzarella",
+            "Smoked salmon",
+            "Goat cheese",
+            "Dill"
+        ],
+        "price": 13.50,
+        "features": [
+            "Seafood"
+        ],
+        "image": "saumon_fromage.jpeg",
+        "categorie": "Gourmandes"
+    },
+    {
+        "id": 15,
+        "name": "Poulet Curry",
+        "description": "Cream sauce, mozzarella, chicken, onions, and curry spices.",
+        "ingredients": [
+            "Cream sauce",
+            "Mozzarella",
+            "Chicken",
+            "Onions",
+            "Curry spices"
+        ],
+        "price": 12.00,
+        "image": "poulet_curry.jpeg",
+        "categorie": "Gourmandes"
+    },
+    {
+        "id": 16,
+        "name": "Périgourdine",
+        "description": "Tomato sauce, mozzarella, duck breast, mushrooms, and foie gras.",
+        "ingredients": [
+            "Tomato sauce",
+            "Mozzarella",
+            "Duck breast",
+            "Mushrooms",
+            "Foie gras"
+        ],
+        "price": 14.00,
+        "image": "perigourdine.jpeg",
+        "categorie": "Gourmandes"
+    },
+    {
+        "id": 17,
+        "name": "Veggie Deluxe",
+        "description": "Tomato sauce, mozzarella, grilled zucchini, eggplant, and cherry tomatoes.",
+        "ingredients": [
+            "Tomato sauce",
+            "Mozzarella",
+            "Zucchini",
+            "Eggplant",
+            "Cherry tomatoes"
+        ],
+        "price": 9.50,
+        "features": [
+            "Vegetarian"
+        ],
+        "image": "veggie_deluxe.jpeg",
+        "categorie": "Spéciales"
+    },
+    {
+        "id": 18,
+        "name": "Tandoori",
+        "description": "Cream sauce, mozzarella, tandoori chicken, red onions, and coriander.",
+        "ingredients": [
+            "Cream sauce",
+            "Mozzarella",
+            "Tandoori chicken",
+            "Red onions",
+            "Coriander"
+        ],
+        "price": 12.00,
+        "image": "tandoori.jpeg",
+        "categorie": "Spéciales"
+    },
+    {
+        "id": 19,
+        "name": "Bruschetta",
+        "description": "Grilled bread topped with tomatoes, basil, and olive oil.",
+        "ingredients": [
+            "Grilled bread",
+            "Tomatoes",
+            "Basil",
+            "Olive oil"
+        ],
+        "price": 6.00,
+        "image": "bruschetta.jpeg",
+        "categorie": "Antipasti & Snacks"
+    },
+    {
+        "id": 20,
+        "name": "Arancini",
+        "description": "Fried risotto balls filled with mozzarella and peas.",
+        "ingredients": [
+            "Risotto",
+            "Mozzarella",
+            "Peas",
+            "Breadcrumbs"
+        ],
+        "price": 7.00,
+        "image": "arancini.jpeg",
+        "categorie": "Antipasti & Snacks"
+    },
+    {
+        "id": 21,
+        "name": "Mozzarella Sticks",
+        "description": "Crispy mozzarella sticks served with marinara sauce.",
+        "ingredients": [
+            "Mozzarella",
+            "Breadcrumbs",
+            "Marinara sauce"
+        ],
+        "price": 6.50,
+        "image": "mozzarella_sticks.jpeg",
+        "categorie": "Antipasti & Snacks"
+    },
+    {
+        "id": 22,
+        "name": "Olives & Focaccia",
+        "description": "Mix of green and black olives with homemade focaccia.",
+        "ingredients": [
+            "Green olives",
+            "Black olives",
+            "Focaccia"
+        ],
+        "price": 5.00,
+        "image": "olives_focaccia.jpeg",
+        "categorie": "Antipasti & Snacks"
+    },
+    {
+        "id": 23,
+        "name": "Antipasto Misto",
+        "description": "Assorted cold cuts, cheese and grilled vegetables.",
+        "ingredients": [
+            "Salami",
+            "Prosciutto",
+            "Cheese",
+            "Grilled vegetables"
+        ],
+        "price": 9.00,
+        "image": "antipasto_misto.jpeg",
+        "categorie": "Antipasti & Snacks"
+    },
+    {
+        "id": 24,
+        "name": "Panzerotti",
+        "description": "Mini fried calzone filled with tomato and cheese.",
+        "ingredients": [
+            "Pizza dough",
+            "Tomato sauce",
+            "Mozzarella"
+        ],
+        "price": 6.50,
+        "image": "panzerotti.jpeg",
+        "categorie": "Antipasti & Snacks"
+    },
+    {
+        "id": 25,
+        "name": "Ginger Beer",
+        "description": "Sparkling ginger beverage, slightly spicy and refreshing.",
+        "ingredients": [
+            "Carbonated water",
+            "Ginger",
+            "Sugar"
+        ],
+        "price": 3.50,
+        "image": "ginger_beer.jpeg",
+        "categorie": "Boissons"
+    },
+    {
+        "id": 26,
+        "name": "Limonata",
+        "description": "Sparkling lemon drink, fresh and zesty.",
+        "ingredients": [
+            "Lemon juice",
+            "Carbonated water",
+            "Sugar"
+        ],
+        "price": 3.00,
+        "image": "limonata.jpeg",
+        "categorie": "Boissons"
+    },
+    {
+        "id": 27,
+        "name": "San Pellegrino Orange",
+        "description": "Italian orange soda with a slightly bitter twist.",
+        "ingredients": [
+            "Orange juice",
+            "Carbonated water",
+            "Sugar"
+        ],
+        "price": 3.20,
+        "image": "san_pellegrino_orange.jpeg",
+        "categorie": "Boissons"
+    },
+    {
+        "id": 28,
+        "name": "Eau pétillante",
+        "description": "Natural sparkling mineral water.",
+        "ingredients": [
+            "Mineral water",
+            "CO2"
+        ],
+        "price": 2.50,
+        "image": "eau_petillante.jpeg",
+        "categorie": "Boissons"
+    },
+    {
+        "id": 29,
+        "name": "Thé glacé maison",
+        "description": "Thé noir infusé à froid, légèrement sucré avec une touche de citron.",
+        "ingredients": [
+            "Thé noir",
+            "Citron",
+            "Sucre de canne"
+        ],
+        "price": 3.00,
+        "image": "the_glace_maison.jpeg",
+        "categorie": "Boissons"
+    },
+    {
+        "id": 30,
+        "name": "Jus de pomme bio",
+        "description": "Pur jus de pommes bio pressées à froid, sans sucre ajouté.",
+        "ingredients": [
+            "Pommes bio"
+        ],
+        "price": 3.20,
+        "image": "jus_pomme_bio.jpeg",
+        "categorie": "Boissons"
     }
 ]

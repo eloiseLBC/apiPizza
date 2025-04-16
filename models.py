@@ -14,6 +14,7 @@ class Pizza(db.Model):
     image = db.Column(db.String(255), nullable=True)
     image_url = db.Column(db.String(255), nullable=True)
     tag = db.Column(db.String(50), nullable=True)
+    categorie = db.Column(db.String(50), nullable=False)
 
     def serialize(self):
         return {
@@ -24,7 +25,8 @@ class Pizza(db.Model):
             "price": self.price,
             "features": self.features,
             "image_url": f"http://localhost:5050/static/images/{self.image}" if self.image else None,
-            "tag": self.tag
+            "tag": self.tag,
+            "categorie": self.categorie
         }
 
 class Restaurant(db.Model):
