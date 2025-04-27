@@ -9,10 +9,10 @@
             "Fresh basil"
         ],
         "price": 8.50,
-        "features": [
-            "Vegetarian",
-            "Gluten-free option"
-        ],
+        "features": {
+            "Vegetarian": true,
+            "GlutenFree": true
+        },
         "image": "margherita.jpeg",
         "categorie": "Classiques"
     },
@@ -26,9 +26,9 @@
             "Pepperoni"
         ],
         "price": 9.00,
-        "features": [
-            "Spicy"
-        ],
+        "features": {
+            "Spicy" : true
+        },
         "image": "pepperoni.jpeg",
         "categorie": "Spéciales"
     },
@@ -44,9 +44,10 @@
             "Mushrooms"
         ],
         "price": 8.50,
-        "features": [
-            "Vegetarian"
-        ],
+        "features": {
+            "Vegetarian": true,
+            "GlutenFree": true
+        },
         "image": "ortolana.jpeg",
         "tag": "moment",
         "categorie": "Spéciales"
@@ -64,9 +65,9 @@
             "Olives"
         ],
         "price": 10.00,
-        "features": [
-            "Gluten-free option"
-        ],
+        "features": {
+            "GlutenFree" : true
+        },
         "image": "4_saisons.jpeg",
         "tag": "moment",
         "categorie": "Classiques"
@@ -82,9 +83,9 @@
             "Chili peppers"
         ],
         "price": 9.50,
-        "features": [
-            "Spicy"
-        ],
+        "features": {
+            "Spicy" : true
+        },
         "image": "reine.jpeg",
         "tag": "moment",
         "categorie": "Classiques"
@@ -100,9 +101,9 @@
             "Mushrooms"
         ],
         "price": 10.50,
-        "features": [
-            "Vegetarian"
-        ],
+        "features": {
+            "Vegetarian": true
+        },
         "image": "calzone.jpeg",
         "tag": "popular",
         "categorie": "Spéciales"
@@ -148,9 +149,9 @@
             "Parmesan"
         ],
         "price": 11.00,
-        "features": [
-            "Vegetarian"
-        ],
+        "features": {
+            "Vegetarian": true
+        },
         "image": "4_fromages.jpeg",
         "tag": "popular",
         "categorie": "Classiques"
@@ -166,9 +167,9 @@
             "Dill"
         ],
         "price": 12.50,
-        "features": [
-            "Seafood"
-        ],
+        "features": {
+            "Seafood" : true
+        },
         "image": "norvegienne.jpeg",
         "tag": "popular",
         "categorie": "Gourmandes"
@@ -184,9 +185,9 @@
             "Spicy salami"
         ],
         "price": 9.50,
-        "features": [
-            "Spicy"
-        ],
+        "features": {
+            "Spicy" : true
+        },
         "image": "vesuvio.jpeg",
         "categorie": "Classiques"
     },
@@ -201,9 +202,9 @@
             "Truffle oil"
         ],
         "price": 13.00,
-        "features": [
-            "Vegetarian"
-        ],
+        "features": {
+            "Vegetarian": true
+        },
         "image": "truffata.jpeg",
         "categorie": "Gourmandes"
     },
@@ -234,9 +235,9 @@
             "Dill"
         ],
         "price": 13.50,
-        "features": [
-            "Seafood"
-        ],
+        "features": {
+            "Seafood" : true
+        },
         "image": "saumon_fromage.jpeg",
         "categorie": "Gourmandes"
     },
@@ -282,9 +283,9 @@
             "Cherry tomatoes"
         ],
         "price": 9.50,
-        "features": [
-            "Vegetarian"
-        ],
+        "features": {
+            "Vegetarian": true
+        },
         "image": "veggie_deluxe.jpeg",
         "categorie": "Spéciales"
     },

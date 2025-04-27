@@ -1,6 +1,6 @@
-from flask import jsonify, send_from_directory
+from flask import jsonify
 from models import Pizza, Restaurant
-import os
+import json
 
 def register_routes(app):
 
@@ -12,13 +12,30 @@ def register_routes(app):
     @app.route('/pizzas', methods=['GET'])
     def list_pizzas():
         pizzas = Pizza.query.all()
-        return jsonify([p.serialize() for p in pizzas]), 200
+        result = []
+        for pizza in pizzas:
+            pizza_data = {
+                'id': pizza.id,
+                'name': pizza.name,
+                'ingredients': pizza.ingredients,
+                'image_url': pizza.image_url,
+                'price': pizza.price,
+                'tag': pizza.tag,
+                'categorie': pizza.categorie,
+                'features': json.loads(pizza.features) if pizza.features else {}
+            }
+            result.append(pizza_data), 200
+        return jsonify(result)
 
     @app.route('/pizzas/<int:pizza_id>', methods=['GET'])
     def get_pizza(pizza_id):
         pizza = Pizza.query.get_or_404(pizza_id)
-        return jsonify(pizza.serialize()), 200
-
-    # @app.route('/images/<path:filename>', methods=['GET'])
-    # def serve_image(filename):
-    #     return send_from_directory(os.path.join(app.root_path, 'images'), filename, mimetype='image/jpeg')
+        pizza_data = {
+                'id': pizza.id,
+                'name': pizza.name,
+                'ingredients': pizza.ingredients,
+                'image_url': pizza.image_url,
+                'price': pizza.price,
+                'features': json.loads(pizza.features) if pizza.features else {}
+            }
+        return jsonify(pizza_data), 200

@@ -10,7 +10,7 @@ class Pizza(db.Model):
     description = db.Column(db.String(255), nullable=False)
     ingredients = db.Column(db.String(255), nullable=False)
     price = db.Column(db.Float, nullable=False)
-    features = db.Column(db.String(255), nullable=True)
+    features = db.Column(db.Text, nullable=True)
     image = db.Column(db.String(255), nullable=True)
     image_url = db.Column(db.String(255), nullable=True)
     tag = db.Column(db.String(50), nullable=True)

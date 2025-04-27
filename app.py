@@ -4,7 +4,7 @@ from flask_migrate import Migrate
 from flask_marshmallow import Marshmallow
 from models import db, Pizza, Restaurant
 from routes import register_routes
-import json, os
+import json
 
 app = Flask(__name__, static_folder='static', static_url_path='/static')
 CORS(app)
@@ -40,7 +40,9 @@ def load_data_from_json():
 
         for p in pizzas:
             p["ingredients"] = ", ".join(p["ingredients"]) if isinstance(p["ingredients"], list) else p["ingredients"]
-            p["features"] = ", ".join(p.get("features", [])) if isinstance(p.get("features"), list) else p.get("features")
+            p["features"] = json.dumps(p.get("features", {}))  
+            if "image" in p:
+                p["image_url"] = f"http://localhost:5050/static/images/{p['image']}"          
             pizza = Pizza(**p)
             db.session.add(pizza)
 
