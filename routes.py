@@ -12,7 +12,10 @@ def register_routes(app):
     @app.route('/pizzas', methods=['GET'])
     def list_pizzas():
         pizzas = Pizza.query.all()
-        return jsonify([p.serialize() for p in pizzas]), 200
+        result = []
+        for pizza in pizzas:
+            result.append(pizza.serialize()), 200
+        return jsonify(result)
 
     @app.route('/pizzas/<int:pizza_id>', methods=['GET'])
     def get_pizza(pizza_id):
