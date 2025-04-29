@@ -42,8 +42,8 @@ def load_data_from_json():
         for p in pizzas:
             p["ingredients"] = ", ".join(p["ingredients"]) if isinstance(p["ingredients"], list) else p["ingredients"]
             p["features"] = json.dumps(p.get("features", {}))  
-            if "image" in p:
-                p["image_url"] = f"http://localhost:5050/static/images/{p['image']}"          
+            # if "image" in p:
+            #     p["image_url"] = f"http://localhost:5050/static/images/{p['image']}"          
             pizza = Pizza(**p)
             db.session.add(pizza)
 

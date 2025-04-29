@@ -1,4 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
+from flask import request
 
 db = SQLAlchemy()
 
@@ -24,8 +25,7 @@ class Pizza(db.Model):
             "ingredients": self.ingredients,
             "price": self.price,
             "features": self.features,
-            "image_url": f"http://localhost:5050/static/images/{self.image}" if self.image else None,
-            "tag": self.tag,
+            "image_url": request.host_url.rstrip('/') + f"/static/images/{self.image}" if self.image else None,
             "categorie": self.categorie
         }
 
