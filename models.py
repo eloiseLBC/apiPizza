@@ -26,7 +26,7 @@ class Pizza(db.Model):
             "ingredients": self.ingredients,
             "price": self.price,
             "tag": self.tag,
-            "features": self.features,
+            "features": json.loads(self.features) if self.features else {}, 
             "image_url": f"{base_url}/static/images/{self.image}" if self.image else None,
             "categorie": self.categorie
         }
