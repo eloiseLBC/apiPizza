@@ -18,6 +18,7 @@ class Pizza(db.Model):
     categorie = db.Column(db.String(50), nullable=False)
 
     def serialize(self):
+        base_url = request.host_url.rstrip('/')
         return {
             "id": self.id,
             "name": self.name,
@@ -25,7 +26,7 @@ class Pizza(db.Model):
             "ingredients": self.ingredients,
             "price": self.price,
             "features": self.features,
-            "image_url": request.host_url.rstrip('/') + f"/static/images/{self.image}" if self.image else None,
+            "image_url": f"{base_url}/static/images/{self.image}" if self.image else None,
             "categorie": self.categorie
         }
 
