@@ -6,6 +6,7 @@ from models import db, Pizza, Restaurant
 from routes import register_routes
 import json
 import os
+import socket
 
 app = Flask(__name__, static_folder='static', static_url_path='/static')
 CORS(app)
@@ -14,6 +15,12 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///pizzadatabase.db'
 db.init_app(app)
 ma = Marshmallow(app)
 migrate = Migrate(app, db)
+host = os.environ.get("RAILWAY_PUBLIC_DOMAIN")
+if not host:
+    host = f"http://localhost:{os.environ.get('PORT', 5000)}"
+else:
+    host = f"https://{host}"
+
 
 register_routes(app)
 
@@ -42,8 +49,8 @@ def load_data_from_json():
         for p in pizzas:
             p["ingredients"] = ", ".join(p["ingredients"]) if isinstance(p["ingredients"], list) else p["ingredients"]
             p["features"] = json.dumps(p.get("features", {}))  
-            # if "image" in p:
-            #     p["image_url"] = f"http://localhost:5050/static/images/{p['image']}"          
+            if "image" in p:
+                p["image_url"] = f"{host}/static/images/{p['image']}"         
             pizza = Pizza(**p)
             db.session.add(pizza)
 
