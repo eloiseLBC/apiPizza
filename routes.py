@@ -14,10 +14,28 @@ def register_routes(app):
         pizzas = Pizza.query.all()
         result = []
         for pizza in pizzas:
-            result.append(pizza.serialize()), 200
+            pizza_data = {
+                'id': pizza.id,
+                'name': pizza.name,
+                'ingredients': pizza.ingredients,
+                'image_url': pizza.image_url,
+                'price': pizza.price,
+                'tag': pizza.tag,
+                'categorie': pizza.categorie,
+                'features': json.loads(pizza.features) if pizza.features else {}
+            }
+            result.append(pizza_data), 200
         return jsonify(result)
 
     @app.route('/pizzas/<int:pizza_id>', methods=['GET'])
     def get_pizza(pizza_id):
         pizza = Pizza.query.get_or_404(pizza_id)
-        return jsonify(pizza.serialize()), 200
+        pizza_data = {
+                'id': pizza.id,
+                'name': pizza.name,
+                'ingredients': pizza.ingredients,
+                'image_url': pizza.image_url,
+                'price': pizza.price,
+                'features': json.loads(pizza.features) if pizza.features else {}
+            }
+        return jsonify(pizza_data), 200
