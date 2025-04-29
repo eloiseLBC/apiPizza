@@ -5,6 +5,7 @@ from flask_marshmallow import Marshmallow
 from models import db, Pizza, Restaurant
 from routes import register_routes
 import json
+import os
 
 app = Flask(__name__, static_folder='static', static_url_path='/static')
 CORS(app)
@@ -54,4 +55,5 @@ def load_data_from_json():
 load_data_from_json()
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5050, host="0.0.0.0")
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
