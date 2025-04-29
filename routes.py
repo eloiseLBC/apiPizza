@@ -1,6 +1,5 @@
 from flask import jsonify
 from models import Pizza, Restaurant
-import json
 
 def register_routes(app):
 
